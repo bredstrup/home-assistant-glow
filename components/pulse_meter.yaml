@@ -72,7 +72,7 @@ sensor:
       # https://github.com/klaasnicolaas/home-assistant-glow/#reduce-the-amount-of-data-the-sensors-produce
       # for more information.
       - throttle_average: 10s
-      # - filter_out: NaN
+      - filter_out: NaN
       - clamp:
           min_value: 0
           max_value: 30000
