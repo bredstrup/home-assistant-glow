@@ -36,7 +36,7 @@ esp32:
 packages:
   basis: !include ../components/basis2.yaml
   status_led: !include ../components/status_led2.yaml
-  pulse_meter: !include ../components/pulse_meter2.yaml
+  pulse_meter: !include ../components/pulse_meter3.yaml
 
 # Enable logging
 logger:
