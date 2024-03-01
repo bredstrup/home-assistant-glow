@@ -54,7 +54,8 @@ sensor:
     icon: mdi:flash-outline
     accuracy_decimals: 0
     pin: ${pulse_pin}
-    # internal_filter: 100ms
+    internal_filter_mode: PULSE
+    internal_filter: 10ms
     on_raw_value:
       then:
         - light.turn_on:
@@ -72,7 +73,10 @@ sensor:
       # for more information.
       - throttle_average: 10s
       - filter_out: NaN
-      - filter_out: > 20000
+      - clamp:
+        min_value: 0
+        max_value: 30000
+        ignore_out_of_range: true
 
     total:
       name: '${friendly_name} - Total Energy'
