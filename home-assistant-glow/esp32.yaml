@@ -34,9 +34,9 @@ esp32:
     type: arduino
 
 packages:
-  basis: !include ../components/basis.yaml
-  status_led: !include ../components/status_led.yaml
-  pulse_meter: !include ../components/pulse_meter.yaml
+  basis: !include ../components/basis2.yaml
+  status_led: !include ../components/status_led2.yaml
+  pulse_meter: !include ../components/pulse_meter2.yaml
 
 # Enable logging
 logger:
